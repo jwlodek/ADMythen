@@ -896,7 +896,7 @@ void mythen::acquisitionTask()
                 status = pasynOctetSyncIO->writeRead(pasynUserMeter_, outString_, strlen(outString_), (char *)detArray_,
                                         nread_expect, M1K_TIMEOUT+acquireTime, &nwrite, &nread, &eomReason);  //Timeout is M1K_TIMEOUT + AcquireTime
 
-                asynPrint(pasynUserSelf, ASYN_TRACE_FLOW, "%s:%s, nread_expected=%d, nread=%d, status=%d, timeout=%f, eomReason=%d\n",
+                asynPrint(pasynUserSelf, ASYN_TRACE_FLOW, "%s:%s: nread_expected=%d, nread=%d, status=%d, timeout=%f, eomReason=%d\n",
                        driverName, functionName, (int)nread_expect, (int)nread, status, M1K_TIMEOUT+acquireTime, eomReason);
 
                 if(nread == nread_expect) {
