@@ -55,6 +55,7 @@ The driver supports all standard areaDetector plugins including NDStdArrays, NDP
 - **areaDetector Integration**: Modified by Joe Sullivan (ANL-APS/XSD/BCDA) to work with areaDetector
 - **Enhancements**: 
   - M. Moore (ANL-APS/XSD/DET): Firmware compatibility updates, ReadMode support, trigger timeout handling, ImageMode improvements
+- **Documentation**: Comprehensive documentation created by K. Gofron (ORNL, Oak Ridge National Laboratory, December 6, 2025)
 
 For detailed release notes, see [RELEASE.md](RELEASE.md).
 
@@ -1589,3 +1590,6 @@ Contributions are welcome! Please:
 **Maintainers**: 
 - Original: Joe Sullivan (ANL-APS/XSD/BCDA)
 - Contributors: M. Moore (ANL-APS/XSD/DET)
+
+**Documentation**: 
+- Created by K. Gofron (ORNL, Oak Ridge National Laboratory, December 6, 2025)
