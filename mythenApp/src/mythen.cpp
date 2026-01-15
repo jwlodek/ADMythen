@@ -903,11 +903,8 @@ void mythen::acquisitionTask()
                     this->lock();
                     dataOK = dataCallback(detArray_);
                     this->unlock();
-                    if (!dataOK) {
-                        eventStatus = getStatus();
-                        setIntegerParam(ADStatus, eventStatus);
-                    }
-
+                    eventStatus = getStatus();
+                    setIntegerParam(ADStatus, eventStatus);
                 }
                 else {
                     eventStatus = getStatus();
