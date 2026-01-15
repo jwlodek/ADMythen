@@ -891,7 +891,7 @@ void mythen::acquisitionTask()
                 else if (readmode_==1)
                   strcpy(outString_, "-readout");
                 else
-                  strcpy(outstring_, "-testpattern");
+                  strcpy(outString_, "-testpattern");
 
                 status = pasynOctetSyncIO->writeRead(pasynUserMeter_, outString_, strlen(outString_), (char *)detArray_,
                                         nread_expect, M1K_TIMEOUT+acquireTime, &nwrite, &nread, &eomReason);  //Timeout is M1K_TIMEOUT + AcquireTime
